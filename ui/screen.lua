@@ -16,6 +16,17 @@ function screen.bbox(x1, y1, x2, y2, w, h)
 	   and  (x1 <= x2+w) and (y1 <= y2+h))
 end
 
+
+function screen.load(resname)
+	assert(resname and type(resname) == 'string')
+	local resource = love.filesystem.load("scr/" .. resname .. ".lua")
+	return resource()
+end
+
+function screen.loadImage(imgname)
+	return love.graphics.newImage("imgs/" .. imgname .. ".png")
+end
+
 function screen.drawElement(e)
 	local font = love.graphics.getFont()
 	local fh = font:getHeight()* font:getLineHeight()

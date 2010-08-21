@@ -6,11 +6,11 @@ function love.conf(t)
 	t.console				= false											-- Attach a console (boolean, Windows only)
 	t.identity           = "ludumdare18"                        -- The identity used to determine where save data is stored.
 
-	t.screen.width			= 800												-- The window width (number)
-	t.screen.height		= 600												-- The window height (number)
+	t.screen.width			= 1024											-- The window width (number)
+	t.screen.height		= 640												-- The window height (number)
 	t.screen.fullscreen	= false											-- Enable fullscreen (boolean)
 	t.screen.vsync			= true											-- Enable vertical sync (boolean)
-	t.screen.fsaa			= 0												-- The number of FSAA-buffers (number)
+	t.screen.fsaa			= 2												-- The number of FSAA-buffers (number)
 
 	t.modules.joystick	= true											-- Enable the joystick module (boolean)
 	t.modules.audio		= true											-- Enable the audio module (boolean)
